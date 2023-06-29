@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
+    <meta http-equiv="no-cache">
+    <meta http-equiv="Expires" content="-1">
+    <meta http-equiv="Cache-Control" content="no-cache">
+    <title>Snake</title>
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css?v=23">
+    <script type="text/javascript" src="js/script.js?v=23" defer></script>
+</head>
+
+<body>
+    <div class="nickname"></div>
+    <div class="menu">
+        <div class="menu_button">Open menu</div>
+        <div class="top_players_button">Leaderboard</div>
+        <div class="binds_button">Control</div>
+        <div class="settings_button">Settings</div>
+        <a class="code_button" href="https://github.com/P1x3L-EXE/Snake-Game" target="_blank">Github</a>
+        <p>The more you eat more points you will have ©</p>
+    </div>
+    <table class="top_players_table">
+        <div class="table_close">Close table</div>
+        <tr>
+            <td>Place</td>
+            <td>Nick</td>
+            <td>Best result</td>
+        </tr>
+    </table>
+    <div class="settings">
+        <div class="settings_close">Close settings</div>
+        <div class="setting_wrapper">
+            <input id="animation" type="checkbox" checked><label for="animation">Disabling this checkbox increases fps</label>
+        </div>
+        <label for="speed"><strong>snake speed: </strong> <input id="speedValue" type="text" value="4"></label>
+        <input id="speed" type="range" min="1" max="6" value="4" step="1">
+        <div class="note">Settings are reset after page reload</div>
+    </div>
+    <div class="binds">
+        <div class="binds_close">Close control</div>
+        <p><strong>Keyboard: </strong>Direction of movement - arrows or WASD<br>Pause - space or P.</p>
+        <hr>
+        <p><strong>Sensor: </strong> Direction of movement - arrows on the screen<br>Pause - by clicking on the playing field.</p>
+        <hr>
+        <p>The pause is removed with the same button that is set, or with any direction button.</p>
+        <hr>
+        <p>You cannot rotate 180 degrees with one click.</p>
+        <hr>
+        <p>Change nickname by clicking on nickname</p>
+    </div>
+    <h1>Snake</h1>
+    <div id="game_field">
+        <div id="fps"></div>
+        <div class="control">Arrow controls, pause with a space or by clicking on the playing field</div>
+        <input id='pause' type="text" placeholder="" readonly>
+        <div class="score">
+            <label for="output">Check:</label>
+            <input id="output" type="text" placeholder="0">
+            <label for="output2">Best try:</label>
+            <input id="output2" type="text" placeholder="0">
+        </div>
+        <div id="snake_head"></div>
+        <div id="apple"></div>
+    </div>
+    <div class="buttons">
+        <div class="left"></div>
+        <div class="right"></div>
+        <div class="up"></div>
+        <div class="down"></div>
+    </div>
+</body>
+
+</html>
